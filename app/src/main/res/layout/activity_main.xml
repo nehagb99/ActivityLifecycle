@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/oncreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnCreate: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/onstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnStart: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oncreate" />
+    <TextView
+        android:id="@+id/onresume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnResume: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onstart" />
+    <TextView
+        android:id="@+id/onpause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnPause: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onresume" />
+    <TextView
+        android:id="@+id/onstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnStop: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onpause" />
+    <TextView
+        android:id="@+id/onrestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnRestart: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onstop" />
+    <TextView
+        android:id="@+id/ondestroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnDestroy: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onrestart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
